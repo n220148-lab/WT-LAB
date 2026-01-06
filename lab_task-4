@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RequestPal - Interactive Home Services</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial;
+        background:#f4f4f4;
+        scroll-behavior:smooth;
+    }
+
+    header{
+        background:#33475c;
+        color:white;
+        padding:15px;
+        text-align:center;
+    }
+
+    nav{
+        background:#34495e;
+        text-align:center;
+        padding:10px;
+        position:sticky;
+        top:0;
+    }
+
+    nav a{
+        color:white;
+        margin:0 15px;
+        text-decoration:none;
+    }
+
+    nav a.active{
+        text-decoration:underline;
+    }
+
+    .theme-toggle{
+        background:white;
+        color:black;
+        padding:5px 10px;
+        border-radius:5px;
+        cursor:pointer;
+        margin-left:20px;
+    }
+
+    .container{
+        padding:20px;
+    }
+
+    .services{
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .service-box{
+        background:white;
+        width:30%;
+        padding:15px;
+        box-shadow:0 0 5px #aaa;
+        transition:0.3s;
+        cursor:pointer;
+    }
+
+    .service-box:hover{
+        transform:scale(1.05);
+        background:#eef6ff;
+    }
+
+    .hidden{display:none;}
+
+    /* Modal */
+    .modal{
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,0.7);
+        display:none;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .modal-content{
+        background:white;
+        width:350px;
+        padding:20px;
+        border-radius:10px;
+    }
+
+    .toast{
+        position:fixed;
+        bottom:20px;
+        right:20px;
+        background:black;
+        color:white;
+        padding:10px;
+        border-radius:5px;
+        display:none;
+    }
+
+    footer{
+        background:#2c3e50;
+        color:white;
+        text-align:center;
+        padding:10px;
+        margin-top:20px;
+    }
+
+    .dark{
+        background:black;
+        color:white;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>RequestPal</h1>
+    <p>Home Services at Your Doorstep</p>
+</header>
+
+<nav>
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#book" class="nav-link">Book Service</a>
+    <a href="#contact" class="nav-link">Contact</a>
+
+    <button class="theme-toggle" id="themeBtn">Toggle Theme</button>
+</nav>
+
+<div class="container" id="home">
+
+    <h2 id="services">Our Services</h2>
+
+    <input type="text" id="searchBox" placeholder="Search services...">
+
+    <div class="services" id="serviceList">
+
+        <div class="service-box">Plumbing</div>
+        <div class="service-box">Electrical</div>
+        <div class="service-box">Home Cleaning</div>
+        <div class="service-box">Appliance Repair</div>
+        <div class="service-box">Painting</div>
+        <div class="service-box">Pest Control</div>
+
+    </div>
+
+    <h2 id="book">Book a Service</h2>
+
+    <form id="bookingForm">
+
+        <label>Name</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Phone</label><br>
+        <input type="text" id="phone"><br><br>
+
+        <label>Select Service</label><br>
+        <select id="serviceSelect">
+            <option value="">--choose--</option>
+            <option>Plumbing</option>
+            <option>Electrical</option>
+            <option>Home Cleaning</option>
+            <option>Painting</option>
+        </select><br><br>
+
+        <button type="submit">Book</button>
+
+    </form>
+
+    <h2 id="contact">Contact</h2>
+
+    <textarea id="message" rows="4" cols="40" placeholder="Write message..."></textarea><br>
+    <button id="sendBtn">Send Message</button>
+
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <p id="modalText"></p>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+<div class="toast" id="toast">Submitted Successfully!</div>
+
+<footer>
+    <p>&copy; 2025 RequestPal</p>
+</footer>
+
+<script>
+/* ---------------------------
+   NAVIGATION CLICK EVENT
+---------------------------*/
+document.querySelectorAll(".nav-link").forEach(link=>{
+    link.addEventListener("click",function(){
+        document.querySelectorAll(".nav-link").forEach(a=>a.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
+/* ---------------------------
+   THEME TOGGLE BUTTON
+---------------------------*/
+document.getElementById("themeBtn").addEventListener("click",()=>{
+    document.body.classList.toggle("dark");
+});
+
+/* ---------------------------
+   SERVICE BOX CLICK EVENT
+---------------------------*/
+document.querySelectorAll(".service-box").forEach(box=>{
+    box.addEventListener("click",function(){
+        openModal("You clicked on: " + this.innerText);
+    });
+
+    box.addEventListener("mouseover",function(){
+        this.style.boxShadow="0 0 10px blue";
+    });
+
+    box.addEventListener("mouseout",function(){
+        this.style.boxShadow="0 0 5px #aaa";
+    });
+});
+
+/* ---------------------------
+   SEARCH FILTER (keyup)
+---------------------------*/
+document.getElementById("searchBox").addEventListener("keyup",function(){
+    let text=this.value.toLowerCase();
+    document.querySelectorAll(".service-box").forEach(box=>{
+        box.style.display = box.innerText.toLowerCase().includes(text) ? "block":"none";
+    });
+});
+
+/* ---------------------------
+   FORM VALIDATION (submit)
+---------------------------*/
+document.getElementById("bookingForm").addEventListener("submit",function(e){
+    e.preventDefault();
+
+    let name=document.getElementById("name").value;
+    let phone=document.getElementById("phone").value;
+    let service=document.getElementById("serviceSelect").value;
+
+    if(name=="" || phone=="" || service==""){
+        openModal("Fill all fields!");
+        return;
+    }
+
+    showToast();
+});
+
+/* ---------------------------
+   INPUT EVENTS
+---------------------------*/
+document.getElementById("name").addEventListener("focus",()=>console.log("Name Focused"));
+document.getElementById("name").addEventListener("blur",()=>console.log("Name Blurred"));
+
+document.getElementById("phone").addEventListener("input",()=>{
+    if(isNaN(document.getElementById("phone").value)){
+        alert("Enter numbers only");
+        document.getElementById("phone").value="";
+    }
+});
+
+/* ---------------------------
+   CONTACT BUTTON CLICK EVENT
+---------------------------*/
+document.getElementById("sendBtn").addEventListener("click",()=>{
+    openModal("Message Sent!");
+});
+
+/* ---------------------------
+   MODAL OPEN/CLOSE FUNCTION
+---------------------------*/
+function openModal(text){
+    document.getElementById("modalText").innerText=text;
+    document.getElementById("modal").style.display="flex";
+}
+
+document.getElementById("closeModal").addEventListener("click",()=>{
+    document.getElementById("modal").style.display="none";
+});
+
+/* ---------------------------
+   TOAST FUNCTION
+---------------------------*/
+function showToast(){
+    let t=document.getElementById("toast");
+    t.style.display="block";
+    setTimeout(()=>t.style.display="none",2000);
+}
+
+/* ---------------------------
+   WINDOW SCROLL EVENT
+---------------------------*/
+window.addEventListener("scroll",()=>{
+    console.log("Scrolling...");
+});
+</script>
+
+</body>
+</html>
