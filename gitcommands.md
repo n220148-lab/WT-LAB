@@ -14,7 +14,7 @@ Example:
 git config --global user.name "Vasim-220148"
 
 Screenshot:
-![screenshot](screenshot1.jpg)
+![Screenshot](Screenshot1.jpg)
 
 ----------------------------------------------------
 
@@ -29,7 +29,7 @@ Example:
 git config --global user.email "n220148@rguktn.ac.in"
 
 Screenshot:
-![screenshot](screenshot2.jpg)
+![Screenshot](Screenshot2.jpg)
 
 ----------------------------------------------------
 
@@ -44,7 +44,7 @@ Example:
 git config --list
 
 Screenshot:
-![screenshot](screenshot3.jpg)
+![Screenshot](Screenshot3.jpg)
 
 ----------------------------------------------------
 
@@ -59,7 +59,7 @@ Example:
 git config --global --unset user.name
 
 Screenshot:
-![screenshot](screenshot4.jpg)
+![Screenshot](Screenshot4.jpg)
 
 ----------------------------------------------------
 
@@ -74,7 +74,7 @@ Example:
 git init
 
 Screenshot:
-![screenshot](screenshot5.jpg)
+![Screenshot](Screenshot5.jpg)
 
 ----------------------------------------------------
 
@@ -89,7 +89,7 @@ Example:
 git clone https://github.com/Vasim-220148/sample-project.git
 
 Screenshot:
-![screenshot](screenshot6.jpg)
+![Screenshot](Screenshot6.jpg)
 
 ----------------------------------------------------
 
@@ -104,7 +104,7 @@ Example:
 git clone --branch main https://github.com/Vasim-220148/sample-project.git
 
 Screenshot:
-![screenshot](screenshot7.jpg)
+![Screenshot](Screenshot7.jpg)
 
 ----------------------------------------------------
 
@@ -119,7 +119,7 @@ Example:
 git clone --depth 1 https://github.com/Vasim-220148/sample-project.git
 
 Screenshot:
-![screenshot](screenshot8.jpg)
+![Screenshot](Screenshot8.jpg)
 
 ----------------------------------------------------
 
@@ -134,7 +134,7 @@ Example:
 git status
 
 Screenshot:
-![screenshot](screenshot9.jpg)
+![Screenshot](Screenshot9.jpg)
 
 ----------------------------------------------------
 
@@ -149,7 +149,7 @@ Example:
 git log
 
 Screenshot:
-![screenshot](screenshot10.jpg)
+![Screenshot](Screenshot10.jpg)
 
 ----------------------------------------------------
 
@@ -164,7 +164,7 @@ Example:
 git log --oneline
 
 Screenshot:
-![screenshot](screenshot11.jpg)
+![Screenshot](Screenshot11.jpg)
 
 ----------------------------------------------------
 
@@ -179,7 +179,7 @@ Example:
 git log --graph --oneline
 
 Screenshot:
-![screenshot](screenshot12.jpg)
+![Screenshot](Screenshot12.jpg)
 
 ----------------------------------------------------
 
@@ -194,7 +194,7 @@ Example:
 git show HEAD
 
 Screenshot:
-![screenshot](screenshot13.jpg)
+![Screenshot](Screenshot13.jpg)
 
 ----------------------------------------------------
 
@@ -209,7 +209,7 @@ Example:
 git diff
 
 Screenshot:
-![screenshot](screenshot14.jpg)
+![Screenshot](Screenshot14.jpg)
 
 ----------------------------------------------------
 
@@ -224,7 +224,7 @@ Example:
 git diff --staged
 
 Screenshot:
-![screenshot](screenshot15.jpg)
+![Screenshot](Screenshot15.jpg)
 
 ----------------------------------------------------
 
@@ -239,7 +239,7 @@ Example:
 git blame README.md
 
 Screenshot:
-![screenshot](screenshot16.jpg)
+![Screenshot](Screenshot16.jpg)
 
 ----------------------------------------------------
 
@@ -254,7 +254,7 @@ Example:
 git reflog
 
 Screenshot:
-![screenshot](screenshot17.jpg)
+![Screenshot](Screenshot17.jpg)
 
 ----------------------------------------------------
 
@@ -269,7 +269,7 @@ Example:
 git shortlog
 
 Screenshot:
-![screenshot](screenshot18.jpg)
+![Screenshot](Screenshot18.jpg)
 
 ----------------------------------------------------
 
@@ -284,7 +284,7 @@ Example:
 git add file1.txt
 
 Screenshot:
-![screenshot](screenshot19.jpg)
+![Screenshot](Screenshot19.jpg)
 
 ----------------------------------------------------
 
@@ -299,7 +299,7 @@ Example:
 git add .
 
 Screenshot:
-![screenshot](screenshot20.jpg)
+![Screenshot](Screenshot20.jpg)
 
 ----------------------------------------------------
 
@@ -314,7 +314,7 @@ Example:
 git add -A
 
 Screenshot:
-![screenshot](screenshot21.jpg)
+![Screenshot](Screenshot21.jpg)
 
 ----------------------------------------------------
 
@@ -329,7 +329,7 @@ Example:
 git restore file1.txt
 
 Screenshot:
-![screenshot](screenshot22.jpg)
+![Screenshot](Screenshot22.jpg)
 
 ----------------------------------------------------
 
@@ -344,7 +344,7 @@ Example:
 git restore --staged file1.txt
 
 Screenshot:
-![screenshot](screenshot23.jpg)
+![Screenshot](Screenshot23.jpg)
 
 ----------------------------------------------------
 
@@ -359,7 +359,7 @@ Example:
 git rm oldfile.txt
 
 Screenshot:
-![screenshot](screenshot24.jpg)
+![Screenshot](Screenshot24.jpg)
 
 ----------------------------------------------------
 
@@ -374,7 +374,7 @@ Example:
 git mv old.txt new.txt
 
 Screenshot:
-![screenshot](screenshot25.jpg)
+![Screenshot](Screenshot25.jpg)
 
 ----------------------------------------------------
 
@@ -389,7 +389,7 @@ Example:
 git commit
 
 Screenshot:
-![screenshot](screenshot26.jpg)
+![Screenshot](Screenshot26.jpg)
 
 ----------------------------------------------------
 
@@ -404,7 +404,7 @@ Example:
 git commit -m "Initial commit"
 
 Screenshot:
-![screenshot](screenshot27.jpg)
+![Screenshot](Screenshot27.jpg)
 
 ----------------------------------------------------
 
@@ -419,7 +419,7 @@ Example:
 git commit --amend
 
 Screenshot:
-![screenshot](screenshot28.jpg)
+![Screenshot](Screenshot28.jpg)
 
 ----------------------------------------------------
 
@@ -428,7 +428,7 @@ Example:
 git branch
 
 Screenshot:
-![screenshot](screenshot29.jpg)
+![Screenshot](Screenshot29.jpg)
 
 ----------------------------------------------------
 
@@ -437,7 +437,7 @@ Example:
 git branch -a
 
 Screenshot:
-![screenshot](screenshot30.jpg)
+![Screenshot](Screenshot30.jpg)
 
 ----------------------------------------------------
 
@@ -446,7 +446,7 @@ Example:
 git branch -d feature
 
 Screenshot:
-![screenshot](screenshot31.jpg)
+![Screenshot](Screenshot31.jpg)
 
 ----------------------------------------------------
 
@@ -455,7 +455,7 @@ Example:
 git branch -D feature
 
 Screenshot:
-![screenshot](screenshot32.jpg)
+![Screenshot](Screenshot32.jpg)
 
 ----------------------------------------------------
 
@@ -464,7 +464,7 @@ Example:
 git checkout main
 
 Screenshot:
-![screenshot](screenshot33.jpg)
+![Screenshot](Screenshot33.jpg)
 
 ----------------------------------------------------
 
@@ -473,7 +473,7 @@ Example:
 git checkout -b new-feature
 
 Screenshot:
-![screenshot](screenshot34.jpg)
+![Screenshot](Screenshot34.jpg)
 
 ----------------------------------------------------
 
@@ -482,7 +482,7 @@ Example:
 git switch main
 
 Screenshot:
-![screenshot](screenshot35.jpg)
+![Screenshot](Screenshot35.jpg)
 
 ----------------------------------------------------
 
@@ -491,7 +491,7 @@ Example:
 git switch -c dev
 
 Screenshot:
-![screenshot](screenshot36.jpg)
+![Screenshot](Screenshot36.jpg)
 
 ----------------------------------------------------
 
@@ -500,7 +500,7 @@ Example:
 git merge feature
 
 Screenshot:
-![screenshot](screenshot37.jpg)
+![Screenshot](Screenshot37.jpg)
 
 ----------------------------------------------------
 
@@ -509,7 +509,7 @@ Example:
 git merge --no-ff feature
 
 Screenshot:
-![screenshot](screenshot38.jpg)
+![Screenshot](Screenshot38.jpg)
 
 ----------------------------------------------------
 
@@ -518,7 +518,7 @@ Example:
 git remote
 
 Screenshot:
-![screenshot](screenshot39.jpg)
+![Screenshot](Screenshot39.jpg)
 
 ----------------------------------------------------
 
@@ -527,7 +527,7 @@ Example:
 git remote -v
 
 Screenshot:
-![screenshot](screenshot40.jpg)
+![Screenshot](Screenshot40.jpg)
 
 ----------------------------------------------------
 
@@ -536,7 +536,7 @@ Example:
 git remote add origin https://github.com/Vasim-220148/project.git
 
 Screenshot:
-![screenshot](screenshot41.jpg)
+![Screenshot](Screenshot41.jpg)
 
 ----------------------------------------------------
 
@@ -545,7 +545,7 @@ Example:
 git remote remove origin
 
 Screenshot:
-![screenshot](screenshot42.jpg)
+![Screenshot](Screenshot42.jpg)
 
 ----------------------------------------------------
 
@@ -554,7 +554,7 @@ Example:
 git fetch
 
 Screenshot:
-![screenshot](screenshot43.jpg)
+![Screenshot](Screenshot43.jpg)
 
 ----------------------------------------------------
 
@@ -563,7 +563,7 @@ Example:
 git fetch --all
 
 Screenshot:
-![screenshot](screenshot44.jpg)
+![Screenshot](Screenshot44.jpg)
 
 ----------------------------------------------------
 
@@ -572,7 +572,7 @@ Example:
 git pull
 
 Screenshot:
-![screenshot](screenshot45.jpg)
+![Screenshot](Screenshot45.jpg)
 
 ----------------------------------------------------
 
@@ -581,7 +581,7 @@ Example:
 git pull --rebase
 
 Screenshot:
-![screenshot](screenshot46.jpg)
+![Screenshot](Screenshot46.jpg)
 
 ----------------------------------------------------
 
@@ -590,7 +590,7 @@ Example:
 git push
 
 Screenshot:
-![screenshot](screenshot47.jpg)
+![Screenshot](Screenshot47.jpg)
 
 ----------------------------------------------------
 
@@ -599,7 +599,7 @@ Example:
 git push -u origin main
 
 Screenshot:
-![screenshot](screenshot48.jpg)
+![Screenshot](Screenshot48.jpg)
 
 ----------------------------------------------------
 
@@ -608,7 +608,7 @@ Example:
 git push --force
 
 Screenshot:
-![screenshot](screenshot49.jpg)
+![Screenshot](Screenshot49.jpg)
 
 ----------------------------------------------------
 
@@ -617,42 +617,42 @@ Example:
 git stash
 
 Screenshot:
-![screenshot](screenshot50.jpg)
+![Screenshot](Screenshot50.jpg)
 
 ----------------------------------------------------
 
 51. git stash list
 
 Screenshot:
-![screenshot](screenshot51.jpg)
+![Screenshot](Screenshot51.jpg)
 
 ----------------------------------------------------
 
 52. git stash pop
 
 Screenshot:
-![screenshot](screenshot52.jpg)
+![Screenshot](Screenshot52.jpg)
 
 ----------------------------------------------------
 
 53. git stash apply
 
 Screenshot:
-![screenshot](screenshot53.jpg)
+![Screenshot](Screenshot53.jpg)
 
 ----------------------------------------------------
 
 54. git stash drop
 
 Screenshot:
-![screenshot](screenshot54.jpg)
+![Screenshot](Screenshot54.jpg)
 
 ----------------------------------------------------
 
 55. git stash clear
 
 Screenshot:
-![screenshot](screenshot55.jpg)
+![Screenshot](Screenshot55.jpg)
 
 ----------------------------------------------------
 
@@ -661,7 +661,7 @@ Example:
 git reset HEAD
 
 Screenshot:
-![screenshot](screenshot56.jpg)
+![Screenshot](Screenshot56.jpg)
 
 ----------------------------------------------------
 
@@ -670,7 +670,7 @@ Example:
 git reset --soft HEAD~1
 
 Screenshot:
-![screenshot](screenshot57.jpg)
+![Screenshot](Screenshot57.jpg)
 
 ----------------------------------------------------
 
@@ -679,7 +679,7 @@ Example:
 git reset --mixed HEAD~1
 
 Screenshot:
-![screenshot](screenshot58.jpg)
+![Screenshot](Screenshot58.jpg)
 
 ----------------------------------------------------
 
@@ -688,7 +688,7 @@ Example:
 git reset --hard HEAD~1
 
 Screenshot:
-![screenshot](screenshot59.jpg)
+![Screenshot](Screenshot59.jpg)
 
 ----------------------------------------------------
 
@@ -697,21 +697,21 @@ Example:
 git revert HEAD
 
 Screenshot:
-![screenshot](screenshot60.jpg)
+![Screenshot](Screenshot60.jpg)
 
 ----------------------------------------------------
 
 61. git clean -f
 
 Screenshot:
-![screenshot](screenshot61.jpg)
+![Screenshot](Screenshot61.jpg)
 
 ----------------------------------------------------
 
 62. git clean -fd
 
 Screenshot:
-![screenshot](screenshot62.jpg)
+![Screenshot](Screenshot62.jpg)
 
 ----------------------------------------------------
 
@@ -720,28 +720,28 @@ Example:
 git rebase main
 
 Screenshot:
-![screenshot](screenshot63.jpg)
+![Screenshot](Screenshot63.jpg)
 
 ----------------------------------------------------
 
 64. git rebase -i
 
 Screenshot:
-![screenshot](screenshot64.jpg)
+![Screenshot](Screenshot64.jpg)
 
 ----------------------------------------------------
 
 65. git rebase --continue
 
 Screenshot:
-![screenshot](screenshot65.jpg)
+![Screenshot](Screenshot65.jpg)
 
 ----------------------------------------------------
 
 66. git rebase --abort
 
 Screenshot:
-![screenshot](screenshot66.jpg)
+![Screenshot](Screenshot66.jpg)
 
 ----------------------------------------------------
 
@@ -750,21 +750,21 @@ Example:
 git cherry-pick commit-id
 
 Screenshot:
-![screenshot](screenshot67.jpg)
+![Screenshot](Screenshot67.jpg)
 
 ----------------------------------------------------
 
 68. git format-patch
 
 Screenshot:
-![screenshot](screenshot68.jpg)
+![Screenshot](Screenshot68.jpg)
 
 ----------------------------------------------------
 
 69. git apply
 
 Screenshot:
-![screenshot](screenshot69.jpg)
+![Screenshot](Screenshot69.jpg)
 
 ----------------------------------------------------
 
@@ -773,7 +773,7 @@ Example:
 git tag
 
 Screenshot:
-![screenshot](screenshot70.jpg)
+![Screenshot](Screenshot70.jpg)
 
 ----------------------------------------------------
 
@@ -782,34 +782,34 @@ Example:
 git tag -a v1.0 -m "version 1.0"
 
 Screenshot:
-![screenshot](screenshot71.jpg)
+![Screenshot](Screenshot71.jpg)
 
 ----------------------------------------------------
 
 72. git tag -d
 
 Screenshot:
-![screenshot](screenshot72.jpg)
+![Screenshot](Screenshot72.jpg)
 
 ----------------------------------------------------
 
 73. git push --tags
 
 Screenshot:
-![screenshot](screenshot73.jpg)
+![Screenshot](Screenshot73.jpg)
 
 ----------------------------------------------------
 
 74. git submodule add
 
 Screenshot:
-![screenshot](screenshot74.jpg)
+![Screenshot](Screenshot74.jpg)
 
 ----------------------------------------------------
 
 75. git bisect
 
 Screenshot:
-![screenshot](screenshot75.jpg)
+![Screenshot](Screenshot75.jpg)
 
 ----------------------------------------------------
